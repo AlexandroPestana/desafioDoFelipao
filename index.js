@@ -6,10 +6,11 @@ let goblinsMortos = 8
 const xpDoGoblin = 750
 
 //laços de repetição
-do {
+for (pontosXP; pontosXP < goblinsMortos*xpDoGoblin; pontosXP = pontosXP + xpDoGoblin) {
+
     console.log( meuHeroi + " matou um goblin e ganhou 750 de experiencia.")
-    pontosXP = pontosXP + xpDoGoblin
-} while ( pontosXP < goblinsMortos*xpDoGoblin )
+    
+}
 
 console.log("Em sua batalha foram mortos um total de " + goblinsMortos + " goblin(s) e ganhou " + pontosXP + " de xp totais")
 
